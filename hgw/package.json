@@ -1,0 +1,22 @@
+{
+  "name": "hgw",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-router": "^2.8.1",
+    "react-scripts": "1.1.0",
+    "yo3": "^3.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "node-sass": "^4.0.0",
+    "sass-loader": "^6.0.6"
+  }
+}
