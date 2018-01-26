@@ -9,7 +9,7 @@ import {Router,Route,IndexRedirect,hashHistory, Redirect} from 'react-router'
 
 import Home from "./javascripts/hgw/home/Home";
 import Find from "./javascripts/hgw/find/Find.js";
-import Type from "./javascripts/hgw/type/Type";
+import Type from "./javascripts/hgw/type/Type.js";
 import Mine from "./javascripts/hgw/mine/Mine";
 
 

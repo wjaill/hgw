@@ -8,7 +8,7 @@ class Footer extends Component {
       navs:[
         {id:1,text:'首页',icon:'\ue61d',path:'/home'},
         {id:2,text:'发现',icon:'\ue602',path:'/find'},
-        {id:3,text:'类目',icon:'\ue78e',path:'/class'},
+        {id:3,text:'类目',icon:'\ue78e',path:'/type'},
         {id:4,text:'我的商城',icon:'\ue605',path:'/mine'}
       ]
     }
