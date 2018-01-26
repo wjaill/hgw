@@ -1,0 +1,98 @@
+.headerhome{
+    width:100%;
+    height:.6rem;
+    background: #e7e7e9;
+    padding: .1rem;
+    display: flex;
+    justify-content: space-between;
+        div{
+            img{
+                display:inline-block;
+                height:.5rem;
+            } 
+            padding:0 .1rem;
+            
+        }
+        
+        div{
+            width:2.36rem;
+            height:.45rem;
+            line-height:.45rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a:nth-of-type(1){  
+                display: inline-block;
+                width:1.67rem;
+                height:.37rem;
+                background: #fff;
+                border-radius: .2rem;
+                position: relative;
+                i{
+                    position:absolute;
+                    right: .1rem;
+                    font-size: .35rem;
+                    line-height: .35rem;
+                    color:#ccc;
+                }
+            }
+            a:nth-of-type(2){
+                display: inline-block;
+                width: .4rem;
+                height:.4rem;
+                color:#000;
+                margin-left:.1rem;
+                i{
+                    font-size: .35rem;
+                    line-height: .35rem;
+                }
+            }
+        }
+}
+.homehead{
+    width:100%;
+    .banner{
+        height:1.5rem;
+        img{
+            width:100%;
+        }
+    }
+    ul{
+        height:1rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        li{
+            height:.8rem;
+            flex:1;
+            text-align: center;
+            a{
+                display: inline-block;
+                width:.52rem;
+                height:.52rem;
+                border-radius: 50%;
+                i{
+                    display: inline-block;
+                    width:.52rem;
+                    height:.52rem;
+                    border-radius:50%;
+                    background: no-repeat;
+                    background-size:.32rem .32rem;
+                    background-position: .1rem .1rem;
+                }
+            }
+            span{
+                display: block;
+            }
+            
+        }
+    }
+}
+.home{
+    height:6.67rem;
+    overflow: hidden;
+    overflow-y: scroll; 
+    padding-bottom:.54rem; 
+}
+
