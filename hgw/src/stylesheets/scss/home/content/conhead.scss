@@ -1,0 +1,14 @@
+.conhead{
+    border-top:.1rem solid #ccc;
+    p{
+        text-align: center;
+    }
+    p:nth-of-type(1){
+        line-height: .4rem;
+    }
+    p:nth-of-type(2){
+        color: #ccc;
+        font-size: .12rem;
+    }
+    
+}
