@@ -12,6 +12,10 @@ import Find from "./javascripts/hgw/find/Find.js";
 import Type from "./javascripts/hgw/type/Type.js";
 import Mine from "./javascripts/hgw/mine/Mine";
 
+//这是类目页的二级路由
+import TypeClassify from "./javascripts/hgw/type/type-classify";
+import TypeList from "./javascripts/hgw/type/type-list";
+import TypeSearch from "./javascripts/hgw/type/type-search";
 
 
 let routes = <Router history={hashHistory}>
@@ -19,7 +23,12 @@ let routes = <Router history={hashHistory}>
 		<IndexRedirect to="home"/>
 		<Route path="home" component={Home}/>
 		<Route path="find" component={Find}/>
-		<Route path="type" component={Type}/>	
+		<Route path="type" component={Type}>
+			<IndexRedirect to="type-classify"/>
+			<Route path="type-classify" component={TypeClassify}/>
+			<Route path="type-list" component={TypeList}/>
+			<Route path="type-search" component={TypeSearch}/>
+		</Route>
 		<Route path="mine" component={Mine}/>					
 		<Redirect from="*" to="home"/>
 	</Route>

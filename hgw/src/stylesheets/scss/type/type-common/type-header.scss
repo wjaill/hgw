@@ -1,0 +1,46 @@
+.type-header{
+    height:43px;
+    width:100%;
+    background:#F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    padding:0 10px;
+    align-items: center;
+    .type-header-left{
+        i{
+            font-size: 25px;
+            color:#bbb;
+        }
+    }
+    .type-header-center{
+        width:2rem;
+        display: flex;
+        .p-input{
+            width:1.79rem;
+            height:.37rem;
+            border:1px solid #ccc;
+            border-radius: 30px;
+            input{
+                width:100%;
+                height:100%;
+                text-align: center;
+                line-height:.37rem;
+                font-size: 16px;
+                background: none;
+                border:none;
+            }
+        }
+        b{
+            font-size: 25px;
+            padding-left:5px;
+            color:#bbb;
+        }
+    }
+    .type-header-right{
+        span{
+            font-size: 25px;
+            color:#bbb;
+        }
+    }
+    
+}

@@ -4,7 +4,7 @@ class Type extends Component {
   render() {
     return (
       <div className="type">
-      type
+      	{this.props.children}
       </div>
     );
   }
