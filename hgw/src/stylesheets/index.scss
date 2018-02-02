@@ -1,5 +1,13 @@
  @import "./scss/footer.scss";
  @import "./scss/reset/reset.scss";
  @import "./scss/home/homeindex.scss";
-  @import "./scss/type/type.scss";
+ @import "./scss/type/type.scss";
 
+#root{
+    width:100%;
+    height:100%;
+    .App{
+        width:100%;
+        height:100%;
+    }
+}

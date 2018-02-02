@@ -1,0 +1,93 @@
+.type-classify{
+    height:100%;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    background:#F5F5F5;
+    .type-classify-box{
+        width:100%;
+        flex:1;
+        display: flex;
+        .type-classify-left{
+            width:22%;
+            height:100%;
+            padding:10px;
+            li{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-bottom:1px solid #ccc;
+                padding:5px 0;
+                i{
+                    font-size: 25px;
+                    color:#ccc;
+                }
+                .i-active{
+                    font-size: 25px;
+                    color:red;
+                }
+                span{
+                    color:#AAA;
+                }
+                .span-active{
+                    color:red;
+                }
+            }
+            .li-active{
+                border-bottom:1px solid red;
+            }
+        }
+        .type-classify-right{
+            width:78%;
+            height:100%;
+            margin-top:10px;
+            dl{
+                width:100%;
+                display: flex;
+                flex-wrap: wrap;
+                dt{
+                    width:100%;
+                    height:.32rem;
+                    background:#fcfcfc;
+                    display: flex;
+                    text-align: center;
+                    padding-top:7px;
+                    border-top:1px solid #f5f5f5;
+                    border-bottom:1px solid #f5f5f5;
+                    position:relative;
+                    i{
+                        display: inline-block;
+                        width:10px;
+                        height:10px;
+                        border-radius: 50%;
+                        background:red;
+                        margin:0 10px;
+                    }
+                    strong{
+                        position:absolute;
+                        right:10px;
+                    }
+                }
+                .alldd{
+                    width:100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    background:#fff;
+                    dd{
+                        width:33.33%;
+                        height:.4rem;
+                        display: flex;
+                        text-align: center;
+                        padding-left:10px;
+                        line-height: .32rem;
+                        font-size:10px;
+                        color:#616161;
+                    }
+                }
+                
+            }
+        }
+    }
+}

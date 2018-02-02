@@ -28,7 +28,7 @@ class TypeSearch extends Component {
       		<ul className="type-circle">
 	      		{
 	            this.state.list.map((item,i)=>(
-	        				<TypeCircle data={item} key={i}/>
+	        		<TypeCircle data={item} key={i}/>
 	            ))
 	           }
       		</ul>
@@ -36,7 +36,7 @@ class TypeSearch extends Component {
       		<ul className="type-square">
 	      		{
 	            this.state.his_list.map((item,i)=>(
-	        				<TypeSquare data={item} key={i}/>
+	        	<TypeSquare data={item} key={i}/>
 	            ))
 	           }
       		</ul>

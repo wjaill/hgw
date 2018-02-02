@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from "axios"
+import TypeHeader from '../type-common/type-header'
 class TypeList extends Component {
 	constructor(props){
 		super(props)
@@ -23,7 +24,7 @@ class TypeList extends Component {
   render() {
     return (
       <div className="type-list">
-      	
+      	<TypeHeader search={this.search} b={true} d={true}/>
       </div>
     );
   }

@@ -12,7 +12,7 @@ class TypeHeader extends Component {
 		history.goBack()
 	}
 	render(){
-		let {text,b} = this.props
+		let {text,b,d} = this.props
 		return (
 			<div className="type-header">
 				<div className="type-header-left" onClick={this.goback}>
@@ -28,8 +28,11 @@ class TypeHeader extends Component {
 					
 				</div>
 				<div className="type-header-right">
+				{
+					d ? <span className="iconfont">&#xe679;</span>:""
+				}
 					{
-						text?<i>{text}</i>:<span className="iconfont">&#xe679;</span>	
+						text?<i>{text}</i>:<span className="iconfont">&#xe679;</span>
 					}
 				</div>
 			</div>
