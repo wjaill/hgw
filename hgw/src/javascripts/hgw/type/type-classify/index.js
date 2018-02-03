@@ -41,6 +41,13 @@ class TypeClassify extends Component {
 		      //console.log(that.state.classify)
 		 })
 	}
+	 //组件将被卸载  
+  componentWillUnmount(){ 
+    //重写组件的setState方法，直接返回空
+    this.setState = (state,callback)=>{
+      return;
+    };  
+    }
   render() {
     return (
       <div className="type-classify">
