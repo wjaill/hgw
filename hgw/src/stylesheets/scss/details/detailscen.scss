@@ -1,0 +1,160 @@
+.detailcen{
+    padding-bottom: .54rem;
+    b{
+        font-weight: normal;
+    }
+    .content1{
+        padding:0 .1rem;
+        p:nth-of-type(1){
+            font-weight: bold;
+            padding-top: .1rem;
+        }
+        p:nth-of-type(2){
+            color:#777;
+            font-size: .12rem;
+        }
+        p:nth-of-type(3){
+            height:.27rem;
+            display: flex;
+            justify-content: space-between;
+            span:nth-of-type(1){
+                color:red;
+                font-size: .26rem;
+                b{
+                    font-size: .1rem;
+                }
+            }
+            span:nth-of-type(2){
+                line-height: .27rem;
+            }
+        }
+        div{
+            height:.65rem;
+            p:nth-of-type(1){
+                display: flex;
+                justify-content: space-between;
+                span{
+                    padding-right:.03rem;
+                    font-size: .14rem;
+                }
+                span:nth-of-type(3){
+                    color: red;
+                }
+            }
+        }
+        p:nth-of-type(4){
+            height: .5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span{
+                b:nth-of-type(2){
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    width: .4rem;
+                    text-align: center;
+                    margin-left: .1rem;
+                }
+            }
+        }
+    }
+    .content2{
+        
+        p:nth-of-type(1){
+            padding:0 .1rem;
+            height:.6rem;
+            border-top:.1rem solid #f5f5f5; 
+            display: flex;
+            justify-content: space-between;
+            line-height: .5rem;
+            span:nth-of-type(2){
+                display: inline-block;
+                width: 1.6rem;
+                font-size: .12rem;
+                color: rgb(235, 139, 139);
+            }
+            span:nth-of-type(3){
+                font-size: .12rem;
+                i{
+                    padding-left: .06rem;
+                }
+            }
+        }
+        p:nth-of-type(2){
+            padding:0 .1rem;
+            border-top:.1rem solid #f5f5f5; 
+            display: flex;
+            justify-content: space-between;
+            height: .5rem;
+            line-height: .4rem;
+        } 
+        p:nth-of-type(3){
+            padding:0 .1rem;  
+            display: flex;
+            justify-content:space-between;  
+            border-bottom:.1rem solid #f5f5f5;             
+            font-size: .12rem;
+            border-top:1px solid #ccc; 
+            padding:.06rem .1rem;
+            b:nth-of-type(2){
+                text-align: center;
+                display: inline-block;
+                width: .25rem;
+                color: red;
+            } 
+            b:nth-of-type(3){
+                text-align: center;
+                display: inline-block;
+                width: .2rem;
+                background: #ED5564;
+                color: #fff;
+            }    
+        }        
+    }
+    .content3{
+        padding:0 .06rem;
+        p:nth-of-type(1){
+            padding:0 .03rem; 
+            height: .38rem;
+            line-height: .38rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        a{
+            color: #000;
+            padding:.05rem 0 .08rem .1rem;
+            .smallgood{
+                width:.8rem;
+                height: 1.24rem;
+                img{
+                    width:.7rem;
+                    height: .7rem;
+                    border: 1px solid #ccc;
+                }
+                p:nth-of-type(1){
+                    padding: 0;
+                    border: none;
+                    font-size: .1rem;
+                    width: .76rem;
+                    height: .3rem;
+                    color: rgb(134, 134, 134);
+                    line-height: .16rem;
+                    overflow: hidden;
+                    margin-top: .06rem;
+                }
+            }
+        }
+           
+    }
+    .content4{
+        width: 100%;
+        background: #F0F0F0;
+        height: .4rem;
+        line-height: .4rem;
+        text-align: center;
+        a{
+            font-size: .16rem;
+            color: rgb(150, 149, 149);
+        }
+    }
+}

@@ -1,3 +1,22 @@
 @import "./home-header.scss";
 @import "./content/conhead.scss";
 @import "./content/good.scss";
+
+#gotop{
+    position: fixed;
+    width:.42rem;
+    height: .42rem;
+    right:.15rem;
+    bottom: .46rem;
+    background: #fff;
+    opacity: .8;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    z-index: 10;
+    text-align: center;
+    line-height: .42rem;
+    display: none;
+    i{
+        font-size: .3rem;
+    }
+}

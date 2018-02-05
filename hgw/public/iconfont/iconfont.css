@@ -61,3 +61,13 @@
 
 .icon-tubiaolunkuo-:before { content: "\e60d"; }
 
+
+@font-face {
+  font-family: 'iconfont';
+  src: 
+  url('./iconfont.woff1') format('woff'),
+  url('./iconfont.ttf1') format('truetype'),
+}
+.icon-diannaoban:before { content: "\e633"; }
+
+.icon-kehu:before { content: "\e65c"; }

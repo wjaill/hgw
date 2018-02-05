@@ -1,13 +1,23 @@
 import React, { Component } from 'react';
-
+import {Link} from "react-router"
+import Good from "./Good.js"
+import RoutBot from "../../bottom/RoutBot.js"
 
 class HomeCon extends Component {
-  constructor(props){
-    super(props)
+  constructor(context,props){
+    super(context,props)
     this.state={
       data:[]
     }
   }
+  shouldComponentUpdate(props){
+      if(props.data.length===this.props.data.length){
+          return false           
+      }else{
+          return true
+      }
+  }
+
   render() {
     let data = this.props.data.length?this.props.data.splice(1,3):[]
     console.log(data)
@@ -16,7 +26,7 @@ class HomeCon extends Component {
       {
         
         data[0]?data.map((item,i)=>(
-          <div key={i}>
+          <div className="bigcon" key={i}>
           <div className="conhead" >
             <p>{item.goods.title}</p>
             <p>小编向您推荐以下商品</p>
@@ -24,19 +34,18 @@ class HomeCon extends Component {
           <div>
               {
                 item.goods.item.map((items,j)=>(
-                <div className="good" key={j}>
-                  <img src={items.goods_image}/>
-                  <div>
-                      <p>{items.goods_name}</p>
-                      <p><span>￥<b>{items.goods_promotion_price}</b></span></p>
-                  </div>
-                </div>
+                  
+                  <Link key={j}  to={'/details/'+'goods_id='+items.goods_id}>
+                    <Good data={items}/>
+                  </Link>
                 ))
               }
           </div>
           </div> 
         )):"" 
       }
+      
+      <RoutBot type={1}/>
       </div>
     )
   }

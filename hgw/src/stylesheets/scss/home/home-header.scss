@@ -63,6 +63,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        background: #fff;
         li{
             height:.8rem;
             flex:1;
@@ -89,10 +90,12 @@
         }
     }
 }
-.home{
+#home{
     height:6.67rem;
     overflow: hidden;
     overflow-y: scroll; 
     padding-bottom:.54rem; 
 }
-
+.bigcon{
+    background: #fff;
+}

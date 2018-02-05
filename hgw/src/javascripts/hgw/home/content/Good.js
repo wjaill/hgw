@@ -7,17 +7,15 @@ class Good extends Component {
     this.state={
     }
   }
-  componentWillMount(){
-    console.log(this.props)
-  }
-  render() {
-    return (
-      <div className="good">
 
-        <img src="http://www.hangowa.com/data/upload/shop/store/goods/48/2017/48_05544059544104485_240.jpg"/>
+  render() {
+    let {data} = this.props
+    return (
+      <div className="good" >
+        <img src={data.goods_image}/>
         <div>
-            <p>这是一个很流弊很流弊的商品 veryvery流弊</p>
-            <p><span>￥<b>20.90</b></span></p>
+            <p>{data.goods_name}</p>
+            <p><span>￥<b>{data.goods_promotion_price}</b></span></p>
         </div>
       </div>
     )
