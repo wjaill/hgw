@@ -80,7 +80,7 @@ class TypeList extends Component {
 	    };  
     }
   render() {
-  	let {list,title,show,sale} = this.state
+  	let {title,show,sale} = this.state
     return (
       <div className="type-list">
 	      <div className="type-header">
@@ -104,15 +104,18 @@ class TypeList extends Component {
 				
       	  </div>
       	<ul className="type-box">
-      		{
-    			list.length ?
-    			this.state.list.map((item)=>(
+      	    {
+	            this.state.list.length?
+	            this.state.list.map((item)=>(
 	        		<TypeLi data={item} key={item.goods_id}/>
-	            )):<span className="iconfont nolist">&#xe621;</span>
+	            )):<p className="nolist">
+	            <span className="iconfont nolist-icon">&#xe621;</span>
+	            <span className="iconfont nolist-font">没有找到更多的数据了~</span>
+	            </p>
+	               
 	        }
       	</ul>
       </div>
-    
     );
   }
 }

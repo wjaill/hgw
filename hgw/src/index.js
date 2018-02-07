@@ -17,6 +17,10 @@ import Mine from "./javascripts/hgw/mine/Mine";
 import TypeClassify from "./javascripts/hgw/type/type-classify";
 import TypeList from "./javascripts/hgw/type/type-list";
 import TypeSearch from "./javascripts/hgw/type/type-search";
+//这是我的页的二级路由
+import Login from "./javascripts/hgw/mine/login";
+import Register from "./javascripts/hgw/mine/register";
+import Personal from "./javascripts/hgw/mine/personal";
 
 
 let routes = <Provider store={store}>
@@ -31,7 +35,12 @@ let routes = <Provider store={store}>
 			<Route path="type-list" component={TypeList}/>
 			<Route path="type-search" component={TypeSearch}/>
 		</Route>
-		<Route path="mine" component={Mine}/>					
+		<Route path="mine" component={Mine}>
+			<IndexRedirect to="personal"/>
+			<Route path="personal" component={Personal}/>
+			<Route path="login" component={Login}/>
+			<Route path="register" component={Register}/>
+		</Route>
 		<Redirect from="*" to="home"/>
 	</Route>
 </Router>

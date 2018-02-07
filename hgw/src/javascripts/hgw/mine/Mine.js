@@ -4,7 +4,7 @@ class Mine extends Component {
   render() {
     return (
       <div className="mine">
-      mine
+          {this.props.children}
       </div>
     );
   }
