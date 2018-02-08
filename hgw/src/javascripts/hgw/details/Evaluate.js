@@ -17,10 +17,22 @@ class Evaluate extends Component {
             {id:6,text:"追加评价",type:5}   
         ],
         types:1,
-        data:[]
+        data:[],
+        navs:[
+          {id:1,text:'首页',icon:'\ue61d',path:''},
+          {id:2,text:'搜索',icon:'\ue60b',path:''},
+          {id:3,text:'购物车',icon:'\ue602',path:''},
+          {id:4,text:'我的商城',icon:'\ue605',path:''},
+          {id:5,text:'消息',icon:'\ue61b',path:''}            
+        ],
+        isshow:false,
     }
     this.retutop = this.retutop.bind(this)
-    // this.getData = this.getData.bind(this)    
+    // this.getData = this.getData.bind(this)
+    this.handleClick = this.handleClick.bind(this)
+  }
+  handleClick(){
+    this.setState({isshow:!this.state.isshow});
   }
   getData(type,id){
     axios.get("http://www.hangowa.com/mo_bile/index.php?act=goods&op=goods_evaluate&goods_id="+localStorage.Good+"&type="+type+"&curpage=1&page=100").then((result)=>(
@@ -37,7 +49,7 @@ class Evaluate extends Component {
     ))
   }
   render() {
-    let {buttons,types} = this.state
+    let {buttons,types,navs} = this.state
     let data = this.state.data==''?'':this.state.data
     return (
       <div className="evaluate">
@@ -45,6 +57,18 @@ class Evaluate extends Component {
             <div className="left"><i className="iconfont" onClick={this.retutop}>&#xe675;</i></div>
             <DetailsHead/>
             <div className="right" onClick={this.handleClick}><i className="iconfont">&#xe679;</i></div>
+            <ul className="headnav" style={{display: this.state.isshow ? "block" : "none"}}>
+                {
+                    navs.map(item=>(
+                    <li key={item.id}>
+                        <Link>
+                            <i className="iconfont">{item.icon}</i>
+                            <span>{item.text}</span>
+                        </Link>
+                    </li>
+                    ))
+                }
+            </ul>
         </div>
         <div className="content">
             <div className="con-top">

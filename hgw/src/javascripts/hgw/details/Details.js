@@ -25,7 +25,7 @@ class Details extends Component {
     this.props.history.go(-1)
   }
   tops(){
-    if(document.getElementsByClassName("details")[0].scrollTop >= 10){
+    if(document.getElementsByClassName("details")[0].scrollTop >= 20){
       this.setState({changeto:true})
     }else{
       this.setState({changeto:false})

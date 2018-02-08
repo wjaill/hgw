@@ -8,10 +8,10 @@ class Homehead extends Component {
       super(props)
       this.state={
            navs:[
-             {id:1,text:'分类',img:'http://www.hangowa.com/wap/images/browse_list_w.png',color:'#FB6E52'},
-             {id:2,text:'购物车',img:'http://www.hangowa.com/wap/images/cart_w.png',color:'#48CFAE'},
-             {id:3,text:'我的商城',img:'http://www.hangowa.com/wap/images/member_w.png',color:'#4FC0E8'},
-             {id:4,text:'每日签到',img:'http://www.hangowa.com/wap/images/mcc_04_w.png',color:'#AC92ED'}            
+             {id:1,text:'分类',img:'http://www.hangowa.com/wap/images/browse_list_w.png',color:'#FB6E52',path:''},
+             {id:2,text:'购物车',img:'http://www.hangowa.com/wap/images/cart_w.png',color:'#48CFAE',path:'shopcar'},
+             {id:3,text:'我的商城',img:'http://www.hangowa.com/wap/images/member_w.png',color:'#4FC0E8',path:''},
+             {id:4,text:'每日签到',img:'http://www.hangowa.com/wap/images/mcc_04_w.png',color:'#AC92ED',path:''}            
            ]
       }
   }
@@ -40,7 +40,7 @@ class Homehead extends Component {
           <ul>
             {
               navs.map(item=>(
-                  <li key={item.id}><Link  style={{background:`${item.color}`}}><i style={{backgroundImage:`url(${item.img})`}}></i></Link><span>{item.text}</span></li>
+                  <li key={item.id}><Link to={item.path} style={{background:`${item.color}`}}><i style={{backgroundImage:`url(${item.img})`}}></i></Link><span>{item.text}</span></li>
               ))
             }
              

@@ -14,6 +14,8 @@ import Mine from "./javascripts/hgw/mine/Mine"
 import Details from "./javascripts/hgw/details/Details"
 import DetailD from "./javascripts/hgw/details/DetailD"
 import Evaluate from "./javascripts/hgw/details/Evaluate"
+import ShopCar from "./javascripts/hgw/details/ShopCar/ShopCar"
+
 
 import {Provider} from 'react-redux'
 import store from './redux/store'
@@ -28,6 +30,7 @@ let routes = <Provider store={store}><Router history={hashHistory}>
 		<Router path="details/:id" component={Details}/>
 		<Router path="detaild/:id" component={DetailD}/>
 		<Router path="evaluate/:id" component={Evaluate}/>		
+		<Router path="shopcar" component={ShopCar}/>				
 		<Redirect from="*" to="home"/>
 	</Route>
 </Router></Provider>

@@ -10,7 +10,7 @@ const FindAction = {
                 dispatch({
 					type:'GET_FIND_DATA',
 					types:data.datas.list
-				})
+                })
             })
         }
     }

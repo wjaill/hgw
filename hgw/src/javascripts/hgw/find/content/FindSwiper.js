@@ -29,7 +29,7 @@ class FindSwiper extends Component {
                 {
                   Find?Find.map((item,i)=>(
                     <div className="swiper-slide" key={i}>
-                      <Link  to={'/details/'+'goods_id='+item.data}><img src={item.image}/></Link>
+                      <Link  to={'/details/'+'goods_id='+item.datas}><img src={item.image}/></Link>
                     </div>
                   )):''
                 }

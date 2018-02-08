@@ -14,15 +14,19 @@ class FindHead extends Component {
         isshow:false
     }
     this.handleClick = this.handleClick.bind(this)
+    this.retutop = this.retutop.bind(this)
   }
   handleClick(){
     this.setState({isshow:!this.state.isshow});
+  }
+  retutop(){
+    this.props.id.history.go(-1)
   }
   render() {
     let {navs} = this.state
     return (
       <div className="findhead">
-        <i className="iconfont">&#xe675;</i>
+        <i className="iconfont" onClick={this.retutop}>&#xe675;</i>
         <span>发现</span>
         <div>
             <i className="iconfont" onClick={this.handleClick}>&#xe679;</i>

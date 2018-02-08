@@ -21,7 +21,7 @@ class Find extends Component {
   render() {
     return (
       <div className="find">
-          <FindHead/>
+          <FindHead id={this.props}/>
           <FindContent/>
           <Footer />
       </div>

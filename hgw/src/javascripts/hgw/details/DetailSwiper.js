@@ -10,7 +10,7 @@ class DetailSwiper extends Component {
         navs:[
             {id:1,text:'首页',icon:'\ue61d',path:''},
             {id:2,text:'搜索',icon:'\ue60b',path:''},
-            {id:3,text:'购物车',icon:'\ue602',path:''},
+            {id:3,text:'购物车',icon:'\ue602',path:'shopcar'},
             {id:4,text:'我的商城',icon:'\ue605',path:''},
             {id:5,text:'消息',icon:'\ue61b',path:''}            
         ],
@@ -47,7 +47,7 @@ class DetailSwiper extends Component {
                     {
                         navs.map(item=>(
                         <li key={item.id}>
-                            <Link>
+                            <Link to={item.path}>
                                 <i className="iconfont">{item.icon}</i>
                                 <span>{item.text}</span>
                             </Link>
