@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import MineRow from '../mine-common/mine-row'
+import MineUl from '../mine-common/mine-ul'
 class Personal extends Component {
 	constructor(props){
 		super(props);
@@ -34,6 +35,13 @@ class Personal extends Component {
         		 	</li>
         		 </ul>
         	</div>
+        	<MineRow text={'我的订单'} ishas={true}>&#xe640;</MineRow>
+        	<MineUl ishas={true}/>
+        	<MineRow text={'我的财产'} ishas={true}>&#xe806;</MineRow>
+        	<MineUl ishas={false}/>
+        	<MineRow text={'我的分销管理'}>&#xe7f9;</MineRow>
+        	<MineRow text={'收货地址管理'}>&#xe6b5;</MineRow>
+        	<MineRow text={'用户设置'}>&#xe63d;</MineRow>
       </div>
     );
   }
